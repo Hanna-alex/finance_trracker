@@ -1,0 +1,37 @@
+@use './variables' as *;
+@use './reset';
+
+:root {
+	--color-text: #{$color-text};
+	--color-text-secondary: #{$color-text-secondary};
+
+	--color-background: #{$color-background};
+	--color-card: #{$color-card};
+
+	--color-primary: #{$color-primary};
+	--color-interactive: #{$color-interactive};
+
+	--color-accent: #{$color-accent};
+	--color-accent-dark: #{$color-accent-dark};
+
+	--color-success: #{$color-success};
+	--color-error: #{$color-error};
+	--color-danger: #{$color-danger};
+
+	--color-selected: #{$color-selected};
+	--color-accent-point: #{$color-accent-point};
+
+	--border-radius-sm: #{$border-radius-sm};
+	--border-radius-md: #{$border-radius-md};
+	--border-radius-lg: #{$border-radius-lg};
+
+	--font-family: #{$font-family};
+}
+
+body {
+	background: var(--color-background);
+	color: var(--color-text);
+	font-family: var(--font-family);
+	font-size: 16px;
+	line-height: 1.5;
+}

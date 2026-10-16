@@ -1,0 +1,117 @@
+@use '../../styles/variables' as *;
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+
+	border-radius: $border-radius-md;
+
+	font-family: inherit;
+	line-height: 1;
+
+	color: $color-text;
+	fill: $color-text;
+
+	transition:
+		background-color 0.2s ease,
+		box-shadow 0.1s ease,
+		transform 0.1s ease;
+}
+.button:disabled {
+	cursor: not-allowed;
+	background: $color-text-secondary;
+}
+
+.button:hover:not(:disabled) {
+	box-shadow: 0 4px 4px $color-selected;
+}
+
+.button:active:not(:disabled) {
+	transform: translateY(1px);
+	box-shadow: 0 2px 4px $color-selected;
+}
+
+//registration
+.registration {
+	background: $color-accent-dark;
+}
+
+// Primary
+.primary {
+	background-color: $color-primary;
+}
+
+//auth
+.auth {
+	background: $color-interactive;
+}
+
+//accent
+.accent {
+	background: $color-accent;
+}
+
+// Secondary
+.secondary {
+	background-color: $color-selected;
+}
+
+//point
+.point {
+	background: $color-accent-point;
+}
+
+// Danger
+.danger {
+	background-color: $color-danger;
+}
+
+//xl
+.xl {
+	min-height: 48px;
+	padding: 15px 70px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+//large кнопка регистрация
+.large {
+	min-height: 48px;
+	padding: 12px 24px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+//large-special
+.large-special {
+	min-height: 46px;
+	padding: 14px 24px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+//medium
+.medium {
+	min-height: 40px;
+	padding: 12px 24px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+//small
+.small {
+	min-height: 36px;
+	padding: 10px 23px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+//compact
+.compact {
+	min-height: 34px;
+	padding: 10px 16px;
+	font-size: 12px;
+	font-weight: 500;
+}
